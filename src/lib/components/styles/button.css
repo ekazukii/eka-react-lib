@@ -1,0 +1,57 @@
+.btn {
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    padding: 0.7rem;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 0.8em;
+    margin: 2px;
+}
+
+.btn.btn-slim {
+    font-size: 0.7em;
+    padding: 0.5rem;
+}
+
+.btn.btn-serif {
+    font-family: "Roboto Slab";
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn-outline {
+    background-color: white;
+}
+
+.btn-primary.btn-outline {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-primary.btn-outline:hover {
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.btn-secondary.btn-outline {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn-secondary.btn-outline:hover {
+    color: white;
+    background-color: var(--color-secondary);
+}

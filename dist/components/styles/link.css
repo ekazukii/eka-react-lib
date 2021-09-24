@@ -1,0 +1,23 @@
+.link {
+    color: black;
+    text-decoration: underline;
+    font-family: "Lato";
+
+    font-weight: 300;
+}
+
+.link-primary {
+    color: var(--color-primary);
+}
+
+.link-secondary {
+    color: #7289da;
+}
+
+.link-white {
+    color: white;
+}
+
+.link.link-serif {
+    font-family: "Roboto Slab";
+}

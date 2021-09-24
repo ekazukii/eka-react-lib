@@ -1,0 +1,41 @@
+.title {
+    font-family: "Lato";
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+h1.title {
+    font-size: 4rem;
+}
+
+h2.title {
+    font-size: 3.5rem;
+}
+
+h3.title {
+    font-size: 3rem;
+}  
+
+h4.title {
+    font-size: 2.5rem;
+}
+
+h5.title {
+    font-size: 2rem;
+}
+
+h6.title {
+    font-size: 1.5rem;  
+}
+
+.title.title-primary {
+    color: var(--color-primary);
+}
+
+.title.title-secondary {
+    color: #7289da;
+}
+
+.title.title-serif {
+    font-family: "Roboto Slab";
+}

@@ -25,9 +25,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div>
+      Primary : <input type="color" id="primary" value="#E76F51"> -
+      Secondary : <input type="color" id="secondary" value="#7289da">
+      <input type="submit" value="Changer les couleurs" id="color-change" class="btn btn-primary btn-slim">
+      <hr>
+    </div>
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -41,3 +50,12 @@
     -->
   </body>
 </html>
+
+<script>
+  let root = document.documentElement;
+
+  document.getElementById("color-change").onclick = () => {
+    root.style.setProperty('--color-primary', document.getElementById("primary").value);
+    root.style.setProperty('--color-secondary', document.getElementById("secondary").value);
+  }
+</script>

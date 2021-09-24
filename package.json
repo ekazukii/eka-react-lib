@@ -1,19 +1,23 @@
 {
   "name": "ekalib",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "main": "dist/main.js",
+  "module": "src/main.js",
+  "author": "ekazukii",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
